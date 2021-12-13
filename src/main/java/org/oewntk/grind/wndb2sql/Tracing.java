@@ -16,9 +16,9 @@ import java.util.Locale;
  */
 public class Tracing
 {
-	static public boolean traceHeap = false;
+	static public final boolean traceHeap = false;
 
-	static public boolean traceTime = false;
+	static public final boolean traceTime = false;
 
 	public static long start()
 	{
