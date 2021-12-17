@@ -35,11 +35,11 @@ grinds the SQL database
 
 *where*
 
-[WNDB]    directory where OEWN distribution WNDB files are
+[WNDB] directory where OEWN distribution WNDB files are
 
-[WNDB2]  directory where extra WNDB extra files are
+[WNDB2] directory where extra WNDB extra files are
 
-[SQL]      directory where SQL files are output
+[SQL] directory where SQL files are output
 
 ## Maven Central
 
