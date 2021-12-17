@@ -1,10 +1,9 @@
 /target/
-/wndb/
-/wndb2/
+
+/wndb*/
+/wndb*
 /sql/
-/wndb
-/wndb2
-/sql
+/sql*
 **/_*/
 **/_*
 #**/*.jar
