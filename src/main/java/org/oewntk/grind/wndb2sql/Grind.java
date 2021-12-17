@@ -9,7 +9,7 @@ package org.oewntk.grind.wndb2sql;
  *
  * @author Bernard Bou
  */
-public class Grinder
+public class Grind
 {
 	/**
 	 * Main entry point
