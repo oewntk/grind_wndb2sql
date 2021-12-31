@@ -4,6 +4,8 @@
 /wndb*
 /sql/
 /sql*
+/nidmaps/
+/sers/
 **/_*/
 **/_*
 #**/*.jar
