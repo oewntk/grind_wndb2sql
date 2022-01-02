@@ -43,7 +43,7 @@ grinds the SQL database
 
 ## Maven Central
 
-		<groupId>io.github.x-englishwordnet</groupId>
+		<groupId>io.github.oewntk</groupId>
 		<artifactId>wndb2sql</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
 
