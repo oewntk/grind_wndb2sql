@@ -9,15 +9,15 @@
 
 This library reads a model from WNDB files and writes it to SQL format.
 
-Project [grind_wndb2sql](https://github.com/x-englishwordnet/grind_wndb2sql)
+Project [grind_wndb2sql](https://github.com/oewntk/grind_wndb2sql)
 
-See also [model](https://github.com/x-englishwordnet/model/blob/master/README.md).
+See also [model](https://github.com/oewntk/model/blob/master/README.md).
 
-See also [fromwndb](https://github.com/x-englishwordnet/fromwndb/blob/master/README.md).
+See also [fromwndb](https://github.com/oewntk/fromwndb/blob/master/README.md).
 
-See also [tosql](https://github.com/x-englishwordnet/tosql/blob/master/README.md).
+See also [tosql](https://github.com/oewntk/tosql/blob/master/README.md).
 
-See also [x-englishwordnet](https://github.com/x-englishwordnet) and [globalwordnet/english-wordnet](https://github.com/globalwordnet/english-wordnet).
+See also [oewntk](https://github.com/oewntk) and [globalwordnet/english-wordnet](https://github.com/globalwordnet/english-wordnet).
 
 ## Dataflow
 
