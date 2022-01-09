@@ -13,6 +13,7 @@
       <excludeFolder url="file://$MODULE_DIR$/nidmaps" />
       <excludeFolder url="file://$MODULE_DIR$/sers" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
+      <excludeFolder url="file://$MODULE_DIR$/sql31" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
