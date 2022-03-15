@@ -25,10 +25,10 @@ senses
 lexes_morphs
 lexes_pronunciations
 senses_adjpositions
-senses_senses
+lexrelations
 senses_vframes
 senses_vtemplates
-synsets_synsets
+semrelations
 "
 
 # I N C L U D E
@@ -183,7 +183,7 @@ for m in ${modules}; do
 			if [ ! -e "${f}" -a "${op}" == "reference" ]; then
 			  continue
 			fi
-			echo -e "sql=${Y}${f}${Z}"
+			echo -e "sql=${Y}$(basename ${f})${Z}"
 			process "${f}" "${op}"
 		done
 	done
