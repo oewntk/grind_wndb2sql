@@ -15,9 +15,9 @@ indir2=$2
 if [ -z "${indir2}" ]; then
   indir2=wndb2
 fi
-outdir=$1
+outdir=$3
 if [ -z "${outdir}" ]; then
-  indir=nidmaps31
+  outdir=nidmaps31
 fi
 
 java -cp oewn-grind-wndb2sql.jar org.oewntk.grind.wndb2sql.Mapper "${indir}" "${indir2}" "${outdir}"

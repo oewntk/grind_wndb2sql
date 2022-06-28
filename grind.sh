@@ -9,7 +9,7 @@
 
 IN="$1"
 if [ -z "$1" ]; then
-	IN=wndb
+	IN=wndb31
 fi
 echo "WNDB:  ${IN}" 1>&2;
 
@@ -21,7 +21,7 @@ echo "WNDB2: ${IN2}" 1>&2;
 
 OUTDIR="$3"
 if [ -z "$3" ]; then
-	OUTDIR=sql/data
+	OUTDIR=sql31/data
 fi
 mkdir -p "${OUTDIR}"
 echo "DIR:   ${OUTDIR}" 1>&2;

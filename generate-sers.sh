@@ -17,7 +17,7 @@ if [ -z "${indir2}" ]; then
 fi
 outdir=$1
 if [ -z "${outdir}" ]; then
-  indir=sers31
+  outdir=sers31
 fi
 
 java -cp oewn-grind-wndb2sql.jar org.oewntk.grind.wndb2sql.Serializer "${indir}" "${indir2}" "${outdir}"
