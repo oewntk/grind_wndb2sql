@@ -6,7 +6,9 @@
 /sql31/
 /sql*
 /nidmaps/
+/nidmaps31/
 /sers/
+/sers31/
 **/_*/
 **/_*
 #**/*.jar

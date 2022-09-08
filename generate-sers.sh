@@ -15,7 +15,7 @@ indir2=$2
 if [ -z "${indir2}" ]; then
   indir2=wndb2
 fi
-outdir=$1
+outdir=$3
 if [ -z "${outdir}" ]; then
   outdir=sers31
 fi
