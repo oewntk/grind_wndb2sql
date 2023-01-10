@@ -34,13 +34,18 @@
 	<!-- T A R G E T S -->
 
 	<!-- input -->
+	<target name="ask-dbname" unless="dbname" description="prompts for dbname if necessary (not in command line arguments)">
+		<input addProperty="dbname" message="SQL database name (wn,oewn:"/>
+		<echo>dbname=${dbname}</echo>
+	</target>
+
 	<target name="ask-dbdir" unless="dbdir" description="prompts for dbdir if necessary (not in command line arguments)">
 		<input addProperty="dbdir" message="SQL data dir (sql,sql31):"/>
 		<echo>dbdir=${dbdir}</echo>
 	</target>
 
 	<target name="ask-dbtag" unless="dbtag" description="prompts for dbtag if necessary (not in command line arguments)">
-		<input addProperty="dbtag" message="Wordnet tag (31,2021,XX,...):"/>
+		<input addProperty="dbtag" message="Wordnet tag (31,2022,XX,...):"/>
 		<echo>dbtag=${dbtag}</echo>
 	</target>
 
@@ -129,9 +134,9 @@
 		<sequential>
 			<definefs dbtype="@{dbtype}" dbtag="@{dbtag}" version="@{version}"/>
 			<mkdir dir="${dir.release}"/>
-			<delete file="${dir.release}/${dbdir}/oewn-@{dbtag}-@{dbtype}-@{version}.zip"/>
-			<echo message="jar oewn-@{dbtag}-@{dbtype}-@{version}.zip"/>
-			<jar destfile="${dir.release}/${dbdir}/oewn-@{dbtag}-@{dbtype}-@{version}.zip" update="no">
+			<delete file="${dir.release}/${dbdir}/${dbname}-@{dbtag}-@{dbtype}-@{version}.zip"/>
+			<echo message="jar ${dbname}-@{dbtag}-@{dbtype}-@{version}.zip"/>
+			<jar destfile="${dir.release}/${dbdir}/${dbname}-@{dbtag}-@{dbtype}-@{version}.zip" update="no">
 				<mappedresources>
 					<fileset refid="fs.@{dbtype}.@{dbtag}.sql"/>
 					<globmapper from="*" to="sql/*"/>
@@ -146,7 +151,7 @@
 					<globmapper from="*" to="legal/*"/>
 				</mappedresources>
 				<manifest>
-					<section name="oewn/${dbdir}/data">
+					<section name="${dbname}/${dbdir}/data">
 						<attribute name="Specification-Title" value="SQL-@{dbtype}-@{dbtag}-@{version}"/>
 						<attribute name="Implementation-Title" value="SQL-@{dbtype}-@{dbtag}-@{version}"/>
 						<attribute name="Specification-Version" value="@{dbtag}"/>

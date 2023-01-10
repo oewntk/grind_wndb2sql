@@ -4,6 +4,11 @@
 
 dbtag=$1
 shift
+if [ -z "${dbname}" ]; then
+  dbname=wn
+fi
+dbtag=$1
+shift
 if [ -z "${dbtag}" ]; then
   dbtag=31
 fi
@@ -32,4 +37,4 @@ export Z='\u001b[0m'
 
 echo -e "${C}packing ${Y}${dbtag}${Z}"
 echo "ant pack with dbtag=${dbtag}"
-ant -f make-dist-sql.xml -Ddbdir=${dbdir} -Ddbtag=${dbtag} -Dversion="${dbversion}"
+ant -f make-dist-sql.xml -Ddbdir=${dbdir} -Ddbname=${dbname} -Ddbtag=${dbtag} -Dversion="${dbversion}"
