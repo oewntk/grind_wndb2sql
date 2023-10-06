@@ -45,7 +45,7 @@
 	</target>
 
 	<target name="ask-dbtag" unless="dbtag" description="prompts for dbtag if necessary (not in command line arguments)">
-		<input addProperty="dbtag" message="Wordnet tag (31,2022,XX,...):"/>
+		<input addProperty="dbtag" message="Wordnet tag (31,2022,2023,XX,...):"/>
 		<echo>dbtag=${dbtag}</echo>
 	</target>
 
