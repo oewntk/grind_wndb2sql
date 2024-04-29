@@ -20,4 +20,5 @@ if [ -z "${outdir}" ]; then
   outdir=nidmaps31
 fi
 
-java -cp oewn-grind-wndb2sql.jar org.oewntk.grind.wndb2sql.Mapper "${indir}" "${indir2}" "${outdir}"
+jar=target/wndb2sql-1.0.5-uber.jar
+java -ea -cp "${jar}" org.oewntk.grind.wndb2sql.Mapper "${indir}" "${indir2}" "${outdir}"
