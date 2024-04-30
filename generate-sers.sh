@@ -1,11 +1,8 @@
 #!/bin/bash
 
 #
-# Copyright (c) 2021. Bernard Bou.
+# Copyright (c) 2021-2024. Bernard Bou.
 #
-# indir (wndb)
-# indir2 (wndb2)
-# outdir (nid.sers + model.ser)
 
 indir=$1
 if [ -z "${indir}" ]; then
