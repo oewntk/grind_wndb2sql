@@ -69,12 +69,7 @@ object Tracing {
             avail /= u.div
 
             val formatter = formatter()
-            return String.format(
-                "%s used: %s%s maxfree: %s%s",  
-                tag,  
-                formatter.format(used), u,  
-                formatter.format(avail), u 
-            )
+            return "$tag used: ${formatter.format(used)}$u maxfree: ${formatter.format(avail)}$u"
         }
 
         fun memoryInfo(tag: String?, u: Unit): String {
@@ -93,12 +88,12 @@ object Tracing {
 
             val formatter = formatter()
             return String.format(
-                "%s max=%15s%s total=%10s%s used=%15s%s free=%15s%s avail=%15s%s",  
-                tag,  
-                formatter.format(max), u,  
-                formatter.format(total), u,  
-                formatter.format(used), u,  
-                formatter.format(free), u,  
+                "%s max=%15s%s total=%10s%s used=%15s%s free=%15s%s avail=%15s%s",
+                tag,
+                formatter.format(max), u,
+                formatter.format(total), u,
+                formatter.format(used), u,
+                formatter.format(free), u,
                 formatter.format(avail), u
             )
         }
