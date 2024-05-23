@@ -13,3 +13,4 @@
 **/_*
 #**/*.jar
 /dependency-reduced-pom.xml
+/oewn-grind-wndb2sql.jar
