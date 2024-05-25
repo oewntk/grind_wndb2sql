@@ -17,5 +17,5 @@ if [ -z "${outdir}" ]; then
   outdir=sers31
 fi
 
-jar=target/wndb2sql-2.1.0-uber.jar
+jar=target/wndb2sql-2.1.1-uber.jar
 java -ea -cp "${jar}" org.oewntk.grind.wndb2sql.Serializer "${indir}" "${indir2}" "${outdir}"
