@@ -1,5 +1,5 @@
 /target/
-
+/build/
 /wndb*/
 /wndb*
 /sql/
@@ -11,6 +11,5 @@
 /sers31/
 **/_*/
 **/_*
-#**/*.jar
 /dependency-reduced-pom.xml
 /oewn-grind-wndb2sql.jar

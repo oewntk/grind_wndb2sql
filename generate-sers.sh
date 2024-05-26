@@ -1,11 +1,8 @@
 #!/bin/bash
 
 #
-# Copyright (c) 2021. Bernard Bou.
+# Copyright (c) 2021-2024. Bernard Bou.
 #
-# indir (wndb)
-# indir2 (wndb2)
-# outdir (nid.sers + model.ser)
 
 indir=$1
 if [ -z "${indir}" ]; then
@@ -20,4 +17,5 @@ if [ -z "${outdir}" ]; then
   outdir=sers31
 fi
 
-java -cp oewn-grind-wndb2sql.jar org.oewntk.grind.wndb2sql.Serializer "${indir}" "${indir2}" "${outdir}"
+jar=target/wndb2sql-2.1.1-uber.jar
+java -ea -cp "${jar}" org.oewntk.grind.wndb2sql.Serializer "${indir}" "${indir2}" "${outdir}"

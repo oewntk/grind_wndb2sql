@@ -1,11 +1,8 @@
 #!/bin/bash
 
 #
-# Copyright (c) 2021. Bernard Bou.
+# Copyright (c) 2021-2024. Bernard Bou.
 #
-# indir (wndb)
-# indir2 (wndb2)
-# outdir (sql/data)
 
 IN="$1"
 if [ -z "$1" ]; then
@@ -26,4 +23,5 @@ fi
 mkdir -p "${OUTDIR}"
 echo "DIR:   ${OUTDIR}" 1>&2;
 
-java -ea -jar oewn-grind-wndb2sql.jar "${IN}" "${IN2}" "${OUTDIR}"
+jar=target/wndb2sql-2.1.1-uber.jar
+java -ea -jar "${jar}" "${IN}" "${IN2}" "${OUTDIR}"
