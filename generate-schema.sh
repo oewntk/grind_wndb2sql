@@ -28,7 +28,7 @@ fi
 
 m=wn
 
-jar=target/wndb2sql-2.2.2-uber.jar
+jar=target/wndb2sql-2.3.1-uber.jar
 if [ "$*" != "" ]; then
   indir="$1"
   shift
