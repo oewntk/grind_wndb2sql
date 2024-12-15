@@ -4,6 +4,8 @@
 # Copyright (c) 2021-2024. Bernard Bou.
 #
 
+set -e
+
 indir=$1
 if [ -z "${indir}" ]; then
   indir=wndb31
