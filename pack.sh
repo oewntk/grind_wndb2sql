@@ -9,22 +9,22 @@ set -e
 # P A R A M S
 
 dbtag=$1
-shift
+[ "$#" -eq 0 ] || shift
 if [ -z "${dbname}" ]; then
   dbname=wn
 fi
 dbtag=$1
-shift
+[ "$#" -eq 0 ] || shift
 if [ -z "${dbtag}" ]; then
   dbtag=31
 fi
 dbversion=$1
-shift
+[ "$#" -eq 0 ] || shift
 if [ -z "${dbversion}" ]; then
   dbversion=1
 fi
 dbdir=$1
-shift
+[ "$#" -eq 0 ] || shift
 if [ -z "${dbdir}" ]; then
   dbdir=sql31
 fi
