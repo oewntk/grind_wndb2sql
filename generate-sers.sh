@@ -19,5 +19,16 @@ if [ -z "${outdir}" ]; then
   outdir=sers31
 fi
 
-jar=target/wndb2sql-2.4.0-uber.jar
+jar=wndb2sql-2.4.0-uber.jar
+if [ ! -e "${jar}" ]; then
+  if [ ! -e "target/${jar}" ]; then
+    echo "Non existing uber jar" >&2
+    exit 1
+    fi
+  ln -s "target/${jar}"
+  fi
+if [ ! -e "${jar}" ]; then
+  echo "Non existing uber jar" >&2
+  exit 2
+  fi
 java -ea -cp "${jar}" org.oewntk.grind.wndb2sql.Serializer "${indir}" "${indir2}" "${outdir}"
