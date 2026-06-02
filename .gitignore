@@ -1,5 +1,6 @@
 /target/
 /build/
+
 /wndb*/
 /wndb*
 /sql/
@@ -9,7 +10,9 @@
 /nidmaps31/
 /sers/
 /sers31/
+
 **/_*/
 **/_*
 **/*.jar
+
 /dependency-reduced-pom.xml
