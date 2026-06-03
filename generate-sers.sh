@@ -19,7 +19,7 @@ if [ -z "${outdir}" ]; then
   outdir=sers31
 fi
 
-jar=wndb2sql-2.4.0-uber.jar
+jar=wndb2sql-3.0.1-uber.jar
 if [ ! -e "${jar}" ]; then
   if [ ! -e "target/${jar}" ]; then
     echo "Non existing uber jar" >&2
