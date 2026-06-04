@@ -26,7 +26,6 @@ object Grind {
     fun main(args: Array<String>) {
         val parser = ArgParser("wndb2sql")
         // Options (start with - or --)
-
         // @formatter:off
         val in1 by parser.argument(            ArgType.String,                                               description = "Input dir or file")
         val in2 by parser.argument(            ArgType.String,                                               description = "Extra input dir or file")
