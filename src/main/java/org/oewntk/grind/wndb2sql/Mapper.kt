@@ -29,7 +29,6 @@ object Mapper {
         if (!outDir.isDirectory) {
             outDir.mkdirs()
         }
-
         val model = makeModel(args)
         printMaps(model!!, outDir)
     }
