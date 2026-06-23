@@ -3,7 +3,7 @@
  */
 package org.oewntk.grind.wndb2sql
 
-import org.oewntk.sql.out.NIDMaps.printMaps
+import org.oewntk.model.NIDs.printMaps
 import org.oewntk.wndb.`in`.Factory.Companion.makeModel
 import java.io.File
 import java.io.IOException
