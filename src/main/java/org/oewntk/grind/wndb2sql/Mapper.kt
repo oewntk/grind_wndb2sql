@@ -3,7 +3,8 @@
  */
 package org.oewntk.grind.wndb2sql
 
-import org.oewntk.model.NIDs.printMaps
+import org.oewntk.model.NIDs.printNIDs
+import org.oewntk.model.SerializeNIDs.serializeNIDs
 import org.oewntk.wndb.`in`.Factory.Companion.makeModel
 import java.io.File
 import java.io.IOException
@@ -30,6 +31,7 @@ object Mapper {
             outDir.mkdirs()
         }
         val model = makeModel(args)
-        printMaps(model!!, outDir)
+        printNIDs(model!!, outDir)
+        serializeNIDs(model, outDir)
     }
 }

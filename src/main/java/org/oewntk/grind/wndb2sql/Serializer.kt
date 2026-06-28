@@ -3,8 +3,9 @@
  */
 package org.oewntk.grind.wndb2sql
 
+import org.oewntk.model.NIDs.printNIDs
 import org.oewntk.model.SerializeJVM.serializeCoreModel
-import org.oewntk.sql.out.SerializeNIDs.serializeNIDs
+import org.oewntk.model.SerializeNIDs.serializeNIDs
 import org.oewntk.wndb.`in`.Factory.Companion.makeModel
 import java.io.File
 import java.io.IOException
@@ -36,5 +37,6 @@ object Serializer {
         val model = makeModel(args)
         serializeCoreModel(model!!, File(outDir, FILE_MODEL))
         serializeNIDs(model, outDir)
+        printNIDs(model, outDir)
     }
 }
