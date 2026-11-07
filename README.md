@@ -1,9 +1,9 @@
-<p align="center">
-<img width="256" height="256" src="images/oewntk.png" alt="OEWNTK">
-</p>
-<p align="center">
-<img width="150" src="images/mavencentral.png" alt="MavenCentral">
-</p>
+<div style="text-align: center;">
+  <img src="images/oewntk.png" alt="OEWNTK" width="256">
+</div>
+<div style="text-align: center;">
+  <img width="150" src="images/mavencentral.png" alt="MavenCentral">
+</div>
 
 # Open English Wordnet WNDB-to-SQL grinder
 
@@ -46,7 +46,7 @@ grinds the SQL database
 
 		<groupId>io.github.oewntk</groupId>
 		<artifactId>wndb2sql</artifactId>
-		<version>3.0.1</version>
+		<version>3.0.2</version>
 
 ## Dependencies
 
