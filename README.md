@@ -46,7 +46,7 @@ grinds the SQL database
 
 		<groupId>io.github.oewntk</groupId>
 		<artifactId>wndb2sql</artifactId>
-		<version>3.0.2</version>
+		<version>3.1.0</version>
 
 ## Dependencies
 
